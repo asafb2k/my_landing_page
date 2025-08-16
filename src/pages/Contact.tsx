@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import * as ReactHookForm from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Helmet } from 'react-helmet-async';
 
 const schema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -14,24 +13,19 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const Contact: React.FC = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
+  const { register, handleSubmit, formState: { errors } } = ReactHookForm.useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
+  const onSubmit: ReactHookForm.SubmitHandler<FormData> = (data) => {
     // Handle form submission here (e.g., send to an API endpoint)
     console.log(data);
     alert('Form submitted successfully!');
   };
 
   return (
-    <>
-      <Helmet>
-        <title>Contact Me | Asaf Ishay Berreby</title>
-        <meta name="description" content="Get in touch with Asaf Ishay Berreby for project inquiries, collaborations, or other opportunities." />
-      </Helmet>
-      <div className="container mx-auto px-6 py-10">
-        <motion.h1
+    <div className="container mx-auto px-6 py-10">
+      <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -90,7 +84,6 @@ const Contact: React.FC = () => {
           </motion.div>
         </div>
       </div>
-    </>
   );
 };
 

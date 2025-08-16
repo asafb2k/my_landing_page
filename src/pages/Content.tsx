@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 const posts = [
   {
@@ -19,13 +18,8 @@ const Content: React.FC = () => {
   const filteredPosts = posts;
 
   return (
-    <>
-      <Helmet>
-        <title>Content | Asaf Ishay Berreby</title>
-        <meta name="description" content="A collection of articles and notes by Asaf Ishay Berreby on machine learning, computer vision, Kaggle, and more." />
-      </Helmet>
-      <div className="container mx-auto px-6 py-10">
-        <motion.h1
+    <div className="container mx-auto px-6 py-10">
+      <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -62,7 +56,6 @@ const Content: React.FC = () => {
           ))}
         </div>
       </div>
-    </>
   );
 };
 

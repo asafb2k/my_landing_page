@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
 
 const projects = [
   {
@@ -27,13 +26,8 @@ const projects = [
 
 const Projects: React.FC = () => {
   return (
-    <>
-      <Helmet>
-        <title>Projects | Asaf Ishay Berreby</title>
-        <meta name="description" content="A showcase of Asaf Ishay Berreby's machine learning projects, including computer vision, NLP, and Kaggle competitions." />
-      </Helmet>
-      <div className="container mx-auto px-6 py-10">
-        <motion.h1
+    <div className="container mx-auto px-6 py-10">
+      <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -62,8 +56,7 @@ const Projects: React.FC = () => {
             </motion.div>
           ))}
         </div>
-      </div>
-    </>
+    </div>
   );
 };
 

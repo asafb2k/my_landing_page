@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaNetworkWired, FaTools, FaTruck, FaCodeBranch } from 'react-icons/fa';
-import { Helmet } from 'react-helmet-async';
 
 const workExperience = [
   {
@@ -28,13 +27,8 @@ const workExperience = [
 
 const Work: React.FC = () => {
   return (
-    <>
-      <Helmet>
-        <title>Work Experience | Asaf Ishay Berreby</title>
-        <meta name="description" content="Details of Asaf Ishay Berreby's work experience at LSports, focusing on sports analytics and deep learning." />
-      </Helmet>
-      <div className="container mx-auto px-6 py-10">
-        <motion.h1
+    <div className="container mx-auto px-6 py-10">
+      <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -60,7 +54,6 @@ const Work: React.FC = () => {
           ))}
         </div>
       </div>
-    </>
   );
 };
 

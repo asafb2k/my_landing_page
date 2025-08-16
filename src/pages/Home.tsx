@@ -1,17 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaKaggle, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import { Helmet } from 'react-helmet-async';
 
 const Home: React.FC = () => {
   return (
-    <>
-      <Helmet>
-        <title>Asaf Ishay Berreby | Machine Learning Engineer</title>
-        <meta name="description" content="Personal website of Asaf Ishay Berreby, a Machine Learning Engineer specializing in Computer Vision and Sports Analytics." />
-      </Helmet>
-      <div className="container mx-auto px-6 py-10">
-        <motion.div
+    <div className="container mx-auto px-6 py-10">
+      <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -62,7 +56,6 @@ const Home: React.FC = () => {
           </div>
         </motion.div>
       </div>
-    </>
   );
 };
 
