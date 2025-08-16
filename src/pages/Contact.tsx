@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import * as ReactHookForm from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import axios from 'axios';
 
 const schema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -13,14 +14,19 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const Contact: React.FC = () => {
-  const { register, handleSubmit, formState: { errors } } = ReactHookForm.useForm<FormData>({
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = ReactHookForm.useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
-  const onSubmit: ReactHookForm.SubmitHandler<FormData> = (data) => {
-    // Handle form submission here (e.g., send to an API endpoint)
-    console.log(data);
-    alert('Form submitted successfully!');
+  const onSubmit: ReactHookForm.SubmitHandler<FormData> = async (data) => {
+    try {
+      await axios.post('https://formspree.io/f/xzzvqpyl', data);
+      alert('Form submitted successfully!');
+      reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('An error occurred while submitting the form. Please try again later.');
+    }
   };
 
   return (
@@ -50,9 +56,6 @@ const Contact: React.FC = () => {
               </a>
             </div>
             <div className="mt-4">
-              <p className="text-gray-600 dark:text-gray-300">
-                Schedule a meeting: <span className="font-semibold">[Calendly Placeholder]</span>
-              </p>
             </div>
           </motion.div>
 
@@ -77,8 +80,8 @@ const Contact: React.FC = () => {
                 <textarea id="message" {...register('message')} rows={4} className="mt-1 block w-full px-3 py-2 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
               </div>
-              <button type="submit" className="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                Send Message
+              <button type="submit" disabled={isSubmitting} className="w-full px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50">
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </motion.div>
