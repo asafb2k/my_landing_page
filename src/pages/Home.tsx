@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaKaggle, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Home: React.FC = () => {
+  const [copied, setCopied] = useState<string | null>(null);
+
+  const handleCopy = (text: string, type: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(type);
+    setTimeout(() => setCopied(null), 2000);
+  };
+
   return (
     <div className="container mx-auto px-6 py-10">
       <motion.div
@@ -26,12 +34,14 @@ const Home: React.FC = () => {
             Israel
           </p>
           <div className="flex justify-center space-x-6 mt-8">
-            <a href="mailto:asafb2k@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+            <button onClick={() => handleCopy('asafb2k@gmail.com', 'email')} className="relative text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaEnvelope size={24} />
-            </a>
-            <a href="https://github.com/asafb2k" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              {copied === 'email' && <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
+            </button>
+            <button onClick={() => handleCopy('https://github.com/asafb2k', 'github')} className="relative text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaGithub size={24} />
-            </a>
+              {copied === 'github' && <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
+            </button>
             <a href="https://www.linkedin.com/in/asaf-ishay-bereby-data-science/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaLinkedin size={24} />
             </a>
