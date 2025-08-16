@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             Machine Learning Engineer | Computer Vision | Sports Analytics
           </p>
           <p className="mt-2 text-gray-500 dark:text-gray-400">
-            Sderot, Israel
+            Bror Hail, Israel
           </p>
           <div className="flex justify-center space-x-6 mt-8">
             <a href="mailto:asafb2k@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
@@ -30,8 +30,17 @@ const Home: React.FC = () => {
             <a href="https://www.linkedin.com/in/asaf-ishay-bereby-data-science/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://www.kaggle.com/asafberreby" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.kaggle.com/asafishay" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaKaggle size={24} />
+            </a>
+          </div>
+          <div className="mt-8">
+            <a
+              href="/Asaf Berreby 2025 ENG.pdf"
+              download="Asaf Berreby 2025 ENG.pdf"
+              className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            >
+              Download CV
             </a>
           </div>
         </motion.div>
