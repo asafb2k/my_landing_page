@@ -11,6 +11,11 @@ const Home: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center"
         >
+          <img
+            src="/asafs_image.jpeg"
+            alt="Asaf Berreby"
+            className="w-32 h-32 rounded-full mx-auto mb-4"
+          />
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">
             Asaf Ishay Berreby
           </h1>
