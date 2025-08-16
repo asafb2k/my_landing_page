@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         <div className="flex space-x-4 mt-4 md:mt-0">
           <button onClick={() => handleCopy('https://github.com/asafb2k', 'github')} className="relative hover:text-gray-900 dark:hover:text-white">
             <FaGithub size={20} />
-            {copied === 'github' && <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
+            {copied === 'github' && <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
           </button>
           <a href="https://www.kaggle.com/asafberreby" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
             <FaKaggle size={20} />
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           </a>
           <button onClick={() => handleCopy('asafb2k@gmail.com', 'email')} className="relative hover:text-gray-900 dark:hover:text-white">
             <FaEnvelope size={20} />
-            {copied === 'email' && <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
+            {copied === 'email' && <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
           </button>
         </div>
       </div>
