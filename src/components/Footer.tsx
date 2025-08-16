@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
           © {new Date().getFullYear()} Asaf Berreby
         </div>
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <a href="https://github.com/asaf-ishay" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
+          <a href="https://github.com/asafb2k" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
             <FaGithub size={20} />
           </a>
-          <a href="https://www.kaggle.com/asafishay" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
+          <a href="https://www.kaggle.com/asafberreby" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
             <FaKaggle size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/asaf-ishay-berreby/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
+          <a href="https://www.linkedin.com/in/asaf-ishay-bereby-data-science/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
             <FaLinkedin size={20} />
           </a>
           <a href="mailto:asafb2k@gmail.com" className="hover:text-gray-900 dark:hover:text-white">
