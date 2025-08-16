@@ -18,9 +18,9 @@ const projects = [
     tags: ['Kaggle', 'Competitive ML'],
   },
   {
-    title: 'Tweet Classification',
-    description: 'Experimented with various classical machine learning models (XGBoost, SVM, Random Forest) for tweet classification tasks.',
-    tags: ['Classical ML', 'NLP', 'Scikit-learn'],
+    title: 'Triton Orchestration',
+    description: 'Deployed a system of 10+ neural networks on NVIDIA Triton Inference Server, orchestrating them in a defined sequence — with some running in parallel and others passing outputs as inputs to subsequent models — all optimized for real-time execution.',
+    tags: ['Triton', 'Pytorch', 'Docker'],
   },
 ];
 
