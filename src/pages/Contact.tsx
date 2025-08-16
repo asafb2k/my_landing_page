@@ -4,6 +4,7 @@ import * as ReactHookForm from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import axios from 'axios';
+import { useState } from 'react';
 
 const schema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -14,6 +15,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const Contact: React.FC = () => {
+  const [emailCopied, setEmailCopied] = useState(false);
   const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = ReactHookForm.useForm<FormData>({
     resolver: zodResolver(schema),
   });
@@ -27,6 +29,12 @@ const Contact: React.FC = () => {
       console.error('Error submitting form:', error);
       alert('An error occurred while submitting the form. Please try again later.');
     }
+  };
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('asafb2k@gmail.com');
+    setEmailCopied(true);
+    setTimeout(() => setEmailCopied(false), 2000);
   };
 
   return (
@@ -51,9 +59,9 @@ const Contact: React.FC = () => {
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of an ambitious vision. Feel free to reach out to me via email or schedule a meeting.
             </p>
             <div className="mt-8">
-              <a href="mailto:asafb2k@gmail.com" className="text-lg font-semibold text-blue-500 hover:underline">
-                asafb2k@gmail.com
-              </a>
+              <button onClick={handleCopyEmail} className="text-lg font-semibold text-blue-500 hover:underline focus:outline-none">
+                {emailCopied ? 'Email Copied!' : 'asafb2k@gmail.com'}
+              </button>
             </div>
             <div className="mt-4">
             </div>
