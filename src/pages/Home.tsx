@@ -71,7 +71,7 @@ const Home: React.FC = () => {
             <p className="mt-2 text-gray-600 dark:text-gray-300">As part of the computer vision team at LSports, I took a part in developing a real-time Tennis Data Extractor from video streams. This system utilizes over 10 deep learning models, including YOLO and X3D, to extract detailed match and player statistics, turning raw game footage into valuable analytics.</p>
           </div>
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white">Deep Learning Expertise</h3>
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">Full-Stack Data Scientist</h3>
             <p className="mt-2 text-gray-600 dark:text-gray-300">I specialize in the end-to-end deep learning lifecycle, from training in PyTorch to high-performance deployment with NVIDIA Triton, TensorRT, and Docker. My experience covers diverse architectures, including video networks with 3D convolutions, ensuring robust and scalable models in production.</p>
           </div>
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
