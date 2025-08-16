@@ -68,15 +68,15 @@ const Home: React.FC = () => {
         >
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">4+ Years in Sports Analytics</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">Building cutting-edge sports analytics systems at LSports.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">As part of the computer vision team at LSports, I took a part in developing a real-time Tennis Data Extractor from video streams. This system utilizes over 10 deep learning models, including YOLO and X3D, to extract detailed match and player statistics, turning raw game footage into valuable analytics.</p>
           </div>
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">Deep Learning Expertise</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">Expert in PyTorch, video models, and deployment with NVIDIA Triton.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">I specialize in the end-to-end deep learning lifecycle, from training in PyTorch to high-performance deployment with NVIDIA Triton, TensorRT, and Docker. My experience covers diverse architectures, including video networks with 3D convolutions, ensuring robust and scalable models in production.</p>
           </div>
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">Passion for ML</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">Passionate about Kaggle challenges & applied machine learning projects.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">My enthusiasm for machine learning extends to personal projects and competitive data science. I actively participate in Kaggle challenges, achieving 1st place in class competitions, and have developed independent projects in areas like cryptocurrency price prediction and advanced tweet analysis.</p>
           </div>
         </motion.div>
       </div>

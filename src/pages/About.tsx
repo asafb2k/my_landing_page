@@ -31,13 +31,19 @@ const About: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Bio</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              I am a Machine Learning Engineer with over four years of experience building advanced computer vision systems at LSports, where I design and deploy end-to-end deep learning pipelines for sports analytics. My expertise lies in extracting actionable insights from complex video data, combining cutting-edge research with practical implementation.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              With a B.Sc. in Software Engineering (Data Science focus) from SCE College of Engineering, I bring a unique blend of strong theoretical knowledge and real-world engineering skills. My work includes training, optimizing, and deploying multiple deep learning models — from YOLO-based object detection to 3D convolutional networks for temporal event detection — all running in high-performance production environments.
+            </p>
             <p className="text-gray-600 dark:text-gray-300">
-              I am a Machine Learning Engineer with a passion for computer vision and sports analytics. I graduated with a B.Sc. in Software Engineering from SCE College of Engineering in 2022. I thrive on solving complex problems and building efficient, scalable machine learning systems.
+              Beyond my professional role, I actively engage in Kaggle competitions, where I’ve ranked first in class challenges, constantly refining my problem-solving and data-driven thinking.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mt-8 mb-4">Volunteering</h2>
             <p className="text-gray-600 dark:text-gray-300">
-              I served as a combat soldier and staff sergeant in the Givati brigade. Since October 7th, I have completed over 270 days of reserve duty, contributing to the security of my country.
+              I served as a combat soldier and staff sergeant in the Givati brigade. Since October 7th, I have completed over 300 days of reserve duty, contributing to the security of my country.
             </p>
             <div className="mt-8">
               <a
