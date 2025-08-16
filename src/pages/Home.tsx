@@ -15,7 +15,7 @@ const Home: React.FC = () => {
             Asaf Ishay Berreby
           </h1>
           <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300">
-            Machine Learning Engineer | Computer Vision | Sports Analytics
+            Machine Learning Engineer | Computer Vision
           </p>
           <p className="mt-2 text-gray-500 dark:text-gray-400">
             Bror Hail, Israel
