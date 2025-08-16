@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useTheme } from '../hooks/useTheme';
-import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -13,15 +12,14 @@ const navLinks = [
 ];
 
 const Header: React.FC = () => {
-  const { theme, toggleTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-gray-800 dark:text-white">
+        <NavLink to="/" className="text-xl font-bold text-gray-800 dark:text-white">
           Asaf Ishay Berreby
-        </div>
+        </NavLink>
         <div className="hidden md:flex space-x-6 items-center">
           {navLinks.map((link) => (
             <NavLink
@@ -36,14 +34,8 @@ const Header: React.FC = () => {
               {link.name}
             </NavLink>
           ))}
-          <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-            {theme === 'light' ? <FaMoon /> : <FaSun />}
-          </button>
         </div>
         <div className="md:hidden flex items-center">
-          <button onClick={toggleTheme} className="p-2 mr-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-            {theme === 'light' ? <FaMoon /> : <FaSun />}
-          </button>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
