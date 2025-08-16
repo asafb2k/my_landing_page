@@ -56,9 +56,6 @@ const Contact: React.FC = () => {
               </a>
             </div>
             <div className="mt-4">
-              <p className="text-gray-600 dark:text-gray-300">
-                Schedule a meeting: <span className="font-semibold">[Calendly Placeholder]</span>
-              </p>
             </div>
           </motion.div>
 
