@@ -17,9 +17,9 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold text-gray-800 dark:text-white">
+        <NavLink to="/" className="text-xl font-bold text-gray-800 dark:text-white">
           Asaf Ishay Berreby
-        </div>
+        </NavLink>
         <div className="hidden md:flex space-x-6 items-center">
           {navLinks.map((link) => (
             <NavLink

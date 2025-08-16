@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             Machine Learning Engineer | Computer Vision
           </p>
           <p className="mt-2 text-gray-500 dark:text-gray-400">
-            Bror Hail, Israel
+            Israel
           </p>
           <div className="flex justify-center space-x-6 mt-8">
             <a href="mailto:asafb2k@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
