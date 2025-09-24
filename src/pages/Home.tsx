@@ -38,14 +38,13 @@ const Home: React.FC = () => {
               <FaEnvelope size={24} />
               {copied === 'email' && <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
             </button>
-            <button onClick={() => handleCopy('https://github.com/asafb2k', 'github')} className="relative text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://github.com/asafb2k" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaGithub size={24} />
-              {copied === 'github' && <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
-            </button>
+            </a>
             <a href="https://www.linkedin.com/in/asaf-ishay-bereby-data-science/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://www.kaggle.com/asafishay" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.kaggle.com/asafberreby" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaKaggle size={24} />
             </a>
           </div>
