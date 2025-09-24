@@ -44,7 +44,7 @@ const Home: React.FC = () => {
             <a href="https://www.linkedin.com/in/asaf-ishay-bereby-data-science/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://www.kaggle.com/asafishay" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.kaggle.com/asafberreby" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
               <FaKaggle size={24} />
             </a>
           </div>
