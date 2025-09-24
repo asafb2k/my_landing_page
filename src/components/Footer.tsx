@@ -17,10 +17,9 @@ const Footer: React.FC = () => {
           © {new Date().getFullYear()} Asaf Berreby
         </div>
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <button onClick={() => handleCopy('https://github.com/asafb2k', 'github')} className="relative hover:text-gray-900 dark:hover:text-white">
+          <a href="https://github.com/asafb2k" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
             <FaGithub size={20} />
-            {copied === 'github' && <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs rounded px-2 py-1">Copied!</span>}
-          </button>
+          </a>
           <a href="https://www.kaggle.com/asafberreby" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white">
             <FaKaggle size={20} />
           </a>
