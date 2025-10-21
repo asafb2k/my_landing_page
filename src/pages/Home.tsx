@@ -63,7 +63,7 @@ const Home: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-16 grid md:grid-cols-3 gap-8"
+          className="mt-16 grid md:grid-cols-2 gap-8"
         >
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">4+ Years in Sports Analytics</h3>
