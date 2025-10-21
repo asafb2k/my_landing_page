@@ -50,8 +50,8 @@ const Home: React.FC = () => {
           </div>
           <div className="mt-8">
             <a
-              href="/Asaf Berreby 2025 ENG.pdf"
-              download="Asaf Berreby 2025 ENG.pdf"
+              href="/Asaf Berreby 2025-B ENG.pdf"
+              download="Asaf Berreby 2025-B ENG.pdf"
               className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
               Download CV
@@ -68,6 +68,10 @@ const Home: React.FC = () => {
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">4+ Years in Sports Analytics</h3>
             <p className="mt-2 text-gray-600 dark:text-gray-300">As part of the computer vision team at LSports, I took a part in developing a real-time Tennis Data Extractor from video streams. This system utilizes over 10 deep learning models, including YOLO and X3D, to extract detailed match and player statistics, turning raw game footage into valuable analytics.</p>
+          </div>
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">M.Sc. in Computer Science</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">Currently pursuing my Master's degree at the Open University of Israel, focusing on advanced computer science research and theory. This academic journey complements my industry experience and keeps me at the cutting edge of computer science innovation and research.</p>
           </div>
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
             <h3 className="text-xl font-bold text-gray-800 dark:text-white">Full-Stack Data Scientist</h3>

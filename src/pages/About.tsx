@@ -38,8 +38,23 @@ const About: React.FC = () => {
               With a B.Sc. in Software Engineering (Data Science focus) from SCE College of Engineering, I bring a unique blend of strong theoretical knowledge and real-world engineering skills. My work includes training, optimizing, and deploying multiple deep learning models — from YOLO-based object detection to 3D convolutional networks for temporal event detection — all running in high-performance production environments.
             </p>
             <p className="text-gray-600 dark:text-gray-300">
-              Beyond my professional role, I actively engage in Kaggle competitions, where I’ve ranked first in class challenges, constantly refining my problem-solving and data-driven thinking.
+              Beyond my professional role, I actively engage in Kaggle competitions, where I've ranked first in class challenges, constantly refining my problem-solving and data-driven thinking.
             </p>
+
+            <h2 className="text-2xl font-bold text-gray-800 dark:text-white mt-8 mb-4">Education</h2>
+            <div className="mb-4">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">M.Sc. in Computer Science</h3>
+              <p className="text-gray-600 dark:text-gray-300">Open University of Israel</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Currently pursuing</p>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mb-4">
+              I am currently pursuing my Master's degree in Computer Science at the Open University of Israel, where I am deepening my theoretical knowledge and research skills in advanced computer science topics. This complements my practical industry experience and enables me to stay at the forefront of cutting-edge research and development.
+            </p>
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-white">B.Sc. in Software Engineering</h3>
+              <p className="text-gray-600 dark:text-gray-300">SCE College of Engineering</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Data Science Focus</p>
+            </div>
 
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mt-8 mb-4">Volunteering</h2>
             <p className="text-gray-600 dark:text-gray-300">
@@ -47,8 +62,8 @@ const About: React.FC = () => {
             </p>
             <div className="mt-8">
               <a
-                href="/Asaf Berreby 2025 ENG.pdf"
-                download="Asaf Berreby 2025 ENG.pdf"
+                href="/Asaf Berreby 2025-B ENG.pdf"
+                download="Asaf Berreby 2025-B ENG.pdf"
                 className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Download CV
