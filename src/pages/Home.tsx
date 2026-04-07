@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaKaggle, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { trackCvDownload } from '../hooks/useTracking';
 
 const Home: React.FC = () => {
   const [copied, setCopied] = useState<string | null>(null);
@@ -49,13 +50,13 @@ const Home: React.FC = () => {
             </a>
           </div>
           <div className="mt-8">
-            <a
-              href="/Asaf Berreby 2026 ENG.pdf"
-              download="Asaf Berreby 2026 ENG.pdf"
+            <button
+              type="button"
+              onClick={() => trackCvDownload('/')}
               className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
               Download CV
-            </a>
+            </button>
           </div>
         </motion.div>
 

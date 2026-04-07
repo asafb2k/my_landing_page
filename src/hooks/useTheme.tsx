@@ -19,6 +19,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   );
 };
 
+/** Hook is intentionally co-located with `ThemeProvider` for this small app. */
+// eslint-disable-next-line react-refresh/only-export-components -- paired hook + provider
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (context === undefined) {
