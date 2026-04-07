@@ -32,7 +32,7 @@ const About: React.FC = () => {
           >
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Bio</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              I am a Machine Learning Engineer with over four years of experience building advanced computer vision systems at LSports, where I design and deploy end-to-end deep learning pipelines for sports analytics. My expertise lies in extracting actionable insights from complex video data, combining cutting-edge research with practical implementation.
+              I am a Machine Learning Engineer currently working at Rakuten Viber, where I am part of the data infrastructure group supporting data scientists with production workflows. Previously, I spent over four years at LSports building advanced computer vision systems and deploying end-to-end deep learning pipelines for sports analytics.
             </p>
             <p className="text-gray-600 dark:text-gray-300 mb-4">
               With a B.Sc. in Software Engineering (Data Science focus) from SCE College of Engineering, I bring a unique blend of strong theoretical knowledge and real-world engineering skills. My work includes training, optimizing, and deploying multiple deep learning models — from YOLO-based object detection to 3D convolutional networks for temporal event detection — all running in high-performance production environments.
@@ -62,8 +62,8 @@ const About: React.FC = () => {
             </p>
             <div className="mt-8">
               <a
-                href="/Asaf Berreby 2025-B ENG.pdf"
-                download="Asaf Berreby 2025-B ENG.pdf"
+                href="/Asaf Berreby 2026 ENG.pdf"
+                download="Asaf Berreby 2026 ENG.pdf"
                 className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Download CV
