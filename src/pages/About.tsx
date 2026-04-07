@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { trackCvDownload } from '../hooks/useTracking';
 
 const skills = [
   { name: 'Python', level: 'Expert' },
@@ -61,13 +62,13 @@ const About: React.FC = () => {
               I served as a combat soldier and staff sergeant in the Givati brigade. Since October 7th, I have completed over 300 days of reserve duty, contributing to the security of my country.
             </p>
             <div className="mt-8">
-              <a
-                href="/Asaf Berreby 2026 ENG.pdf"
-                download="Asaf Berreby 2026 ENG.pdf"
+              <button
+                type="button"
+                onClick={() => trackCvDownload('/about')}
                 className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
               >
                 Download CV
-              </a>
+              </button>
             </div>
           </motion.div>
 
