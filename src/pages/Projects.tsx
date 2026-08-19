@@ -1,7 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  url?: string;
+};
+
+const projects: Project[] = [
+  {
+    title: 'RapidTradeView',
+    description: 'A side project I am building in my free time to make stock research faster. It combines price data and charts, technical indicators, analyst consensus, news sentiment, social buzz, and statistically ranked daily picks for US stocks and ETFs.',
+    tags: ['Market Data', 'Statistical Modeling', 'Sentiment Analysis'],
+    url: 'https://www.rapidtradeview.trade/',
+  },
   {
     title: 'Ground-hit Detector',
     description: 'Developed a 3D-Unet model to detect ball ground-hits in tennis from video footage. This project involved complex video analysis and deep learning techniques.',
@@ -53,6 +67,17 @@ const Projects: React.FC = () => {
                   </span>
                 ))}
               </div>
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-2 font-semibold text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  Visit live project
+                  <FaExternalLinkAlt aria-hidden="true" className="text-xs" />
+                </a>
+              )}
             </motion.div>
           ))}
         </div>

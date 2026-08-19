@@ -79,8 +79,19 @@ const Home: React.FC = () => {
             <p className="mt-2 text-gray-600 dark:text-gray-300">I specialize in the end-to-end deep learning lifecycle, from training in PyTorch to high-performance deployment with NVIDIA Triton, TensorRT, and Docker. My experience covers diverse architectures, including video networks with 3D convolutions, ensuring robust and scalable models in production.</p>
           </div>
           <div className="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-white">Passion for ML</h3>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">My enthusiasm for machine learning extends to personal projects and competitive data science. I actively participate in Kaggle challenges, achieving 1st place in class competitions, and have developed independent projects in areas like cryptocurrency price prediction and advanced tweet analysis.</p>
+            <h3 className="text-xl font-bold text-gray-800 dark:text-white">Building in My Free Time</h3>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              In my free time, I&apos;m building{' '}
+              <a
+                href="https://www.rapidtradeview.trade/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-blue-600 hover:text-blue-700 hover:underline dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                RapidTradeView
+              </a>
+              , a multi-source stock research tool that brings market data, technical indicators, analyst consensus, news sentiment, and social buzz into one fast view.
+            </p>
           </div>
         </motion.div>
       </div>
