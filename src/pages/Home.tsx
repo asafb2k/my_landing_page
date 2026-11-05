@@ -21,7 +21,7 @@ const Home: React.FC = () => {
           className="text-center"
         >
           <img
-            src="/asafs_image.jpeg"
+            src={`${import.meta.env.BASE_URL}asafs_image.jpeg`}
             alt="Asaf Berreby"
             className="w-32 h-32 rounded-full mx-auto mb-4"
           />

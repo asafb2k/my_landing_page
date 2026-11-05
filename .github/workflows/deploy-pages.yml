@@ -24,7 +24,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      # Served from /my_landing_page/ on github.io; switch to / once the custom domain points here
+      - run: npm run build -- --base=/my_landing_page/
       # SPA fallback: GitHub Pages serves 404.html for unknown paths (replaces vercel.json rewrites)
       - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
